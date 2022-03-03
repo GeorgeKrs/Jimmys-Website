@@ -1,10 +1,11 @@
-import NavigationBar from "./navigation/NavigationBar";
 import "./App.css";
+
+import IntroPage from "./IntroPage/IntroPage";
 
 function App() {
   return (
     <div className="">
-      <NavigationBar />
+      <IntroPage />
     </div>
   );
 }
