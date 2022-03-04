@@ -14,7 +14,7 @@ import {
 import { Modal } from "react-bootstrap";
 
 const NavigationBar = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const handleClose = () => setShowMenu(false);
   const handleShow = () => setShowMenu(true);
 
@@ -29,7 +29,9 @@ const NavigationBar = () => {
           className="header-link text-color"
           onClick={() => window.location.reload()}
         >
-          Jimmy's Logo
+          JIMMY'S FITNESS
+          <br />
+          BUILDING CLUB
         </a>
       </div>
       {/* MENU NAVIGATION */}

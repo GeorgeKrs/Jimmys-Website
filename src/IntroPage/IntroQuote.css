@@ -1,0 +1,28 @@
+.intro-quote-div {
+  margin-top: 20vh;
+}
+
+.intro-quote-div h1 {
+  font-size: 40px;
+}
+
+.text-color {
+  color: var(--color-gold);
+}
+
+.text-emphasized {
+  color: var(--color-gold);
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.ul-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.il-spacing {
+  padding-top: 10px;
+  font-size: 20px;
+}
