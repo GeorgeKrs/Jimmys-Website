@@ -50,6 +50,9 @@ const NavigationBar = () => {
               <h4 className="modal-text">Σχετικά με εμάς</h4>
             </div>
             <div className="p-3">
+              <h4 className="modal-text">Εξοπλισμός</h4>
+            </div>
+            <div className="p-3">
               <h4 className="modal-text">Συνδρομές</h4>
             </div>
             <div className="p-3">

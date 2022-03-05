@@ -1,0 +1,13 @@
+.footer-div {
+  background-color: var(--color-dark);
+  padding: 40px;
+}
+
+.footer-link {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: red;
+}

@@ -19,7 +19,7 @@ const IntroQuote = () => {
               className="font-icon-header"
             />
             <span className="px-2">
-              30 Χρόνια εμπειρίας και συνεχούς ενασχόλησης <br />
+              33 Χρόνια εμπειρίας και συνεχής ενασχόληση <br />
               με το Fitness και το Bodybuilding
             </span>
           </li>
