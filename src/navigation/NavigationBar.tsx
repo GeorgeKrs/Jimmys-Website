@@ -56,6 +56,9 @@ const NavigationBar = () => {
               <h4 className="modal-text">Συνδρομές</h4>
             </div>
             <div className="p-3">
+              <h4 className="modal-text">Διακρίσεις</h4>
+            </div>
+            <div className="p-3">
               <h4 className="modal-text">Επικοινωνία</h4>
             </div>
             <hr />

@@ -10,7 +10,7 @@ interface Props {
 
 const Card = (props: Props) => {
   return (
-    <div className="card text-dark bold-letters mb-3 mx-3">
+    <div className="card text-dark bold-letters mb-3 mx-3 border border-dark">
       <div className="card-header text-center">{props.plan}</div>
       <div className="card-body">
         <ul className="list-group ">

@@ -9,5 +9,21 @@
 }
 
 .footer-link:hover {
-  color: red;
+  color: var(--bs-gray-400);
+  transition: 200ms ease-in-out;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.creators-link {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+.creators-link:hover {
+  color: var(--bs-gray-400);
+  transition: 200ms ease-in-out;
+  cursor: pointer;
 }
