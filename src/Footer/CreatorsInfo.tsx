@@ -16,7 +16,7 @@ const CreatorsInfo = () => {
       </div>
 
       <div className="mt-5 text-secondary d-flex justify-content-end">
-        <h6>&copy; 2022, JimmysClub.web.app | All Rights Reserved</h6>
+        <h6>&copy; 2022, Jimmy'sClub | All Rights Reserved</h6>
       </div>
       <div className="text-secondary d-flex justify-content-end">
         <h6>

@@ -1,3 +1,51 @@
 .tournaments-div {
   background-color: var(--color-light);
+  padding: 0;
+  margin: 0;
+}
+
+/* Timeline Container */
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid var(--bs-dark);
+}
+
+/* Card container */
+.timeline-card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: var(--bs-dark);
+  color: var(--bs-light);
+  border-radius: 8px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: var(--color-green);
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -36px;
+  border: 3px solid var(--color-green);
 }
