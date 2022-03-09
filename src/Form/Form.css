@@ -1,0 +1,58 @@
+.form-div {
+  background-color: var(--color-lighter-gray);
+  padding: 16px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.custom-input {
+  background-color: var(--color-lighter-gray);
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-green);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+  width: 100%;
+}
+
+.custom-input:hover {
+  background-color: var(--bs-gray-200);
+  border: 2px solid var(--color-green) !important;
+  cursor: pointer;
+}
+
+.custom-input:focus {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-green);
+}
+
+.error-text {
+  color: var(--bs-danger-shadow-200);
+}
+
+.custom-btn {
+  color: var(--bs-dark);
+  background-color: var(--color-green);
+  border-radius: 5px;
+  border: 2px solid var(--bs-light);
+  padding: 8px;
+}
+
+.custom-btn:hover {
+  background-color: var(--color-darker-green);
+}
+
+/* .custom-btn:active {
+  background-color: var(--color-darker-green);
+  box-shadow: 2px 2px 2px var(--color-darker-green);
+  margin: 2px 2px 2px 2px;
+}
+
+.custom-btn:focus {
+  background-color: var(--color-darker-green);
+  box-shadow: 2px 2px 2px var(--color-darker-green);
+  margin: 2px 2px 2px 2px;
+} */

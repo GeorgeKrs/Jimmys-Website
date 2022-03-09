@@ -6,9 +6,7 @@ const MeetUs = () => {
   return (
     <div className="col-sm-12 col-md-12 col-lg-6">
       <h2 className={"text-light"}>
-        <b>
-          <u>Συναντήστε μας από κοντά</u>
-        </b>
+        <b>Συναντήστε μας από κοντά</b>
       </h2>
       <div className="mt-5">
         <a

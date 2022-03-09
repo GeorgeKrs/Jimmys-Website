@@ -9,9 +9,7 @@ const SectionTitle = (props: Props) => {
     <div className="">
       <div className="mt-4">
         <h2 className={props.lightMode === true ? "text-light" : "text-dark"}>
-          <b>
-            <u>{props.title}</u>
-          </b>
+          <b>{props.title}</b>
         </h2>
       </div>
       <div className="mt-5">
