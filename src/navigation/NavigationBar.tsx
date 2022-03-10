@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./NavigationBar.css";
-
+import logo from "../assets/logo.png";
 // font icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -33,9 +33,7 @@ const NavigationBar = (props: Props) => {
           className="header-link text-color"
           onClick={() => window.location.reload()}
         >
-          JIMMY'S FITNESS
-          <br />
-          BUILDING CLUB
+          <img style={{ maxHeight: "100px", maxWidth: "100px" }} src={logo} />
         </a>
       </div>
       {/* MENU NAVIGATION */}
