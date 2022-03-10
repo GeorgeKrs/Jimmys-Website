@@ -4,6 +4,9 @@ import "./Form.css";
 
 import useInput from "../hooks/use-input";
 
+// Save to db
+import { sendVisitorData } from "../utils/firebase";
+
 // font icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +16,8 @@ const isEmail = (value: string) => value.includes("@");
 
 const Form = () => {
   const [inputsDisabled, setInputsDisabled] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [httpError, setHttpError] = useState(false);
 
   const {
     value: fullnameValue,
@@ -49,18 +54,25 @@ const Form = () => {
 
   const submitHandler = (event: any) => {
     event.preventDefault();
+    setLoading(true);
 
     if (!formIsValid) {
       return;
     }
 
-    console.log("Submitted!");
+    const msgData = { name: fullnameValue, email: emailValue, msg: textValue };
+    const response = sendVisitorData(msgData);
 
-    setInputsDisabled(true);
-    // resetFullname();
-    // resetEmail();
-    // resetText();
+    response
+      .catch((error) => setHttpError(true))
+      .finally(() => {
+        setInputsDisabled(true);
+        setLoading(false);
+      });
   };
+
+  const btnDisabled =
+    formIsValid === false || inputsDisabled === true || loading === true;
 
   return (
     <form className="form-div">
@@ -121,28 +133,27 @@ const Form = () => {
             size="lg"
             icon={faInfoCircle}
             className="font-icon-back"
-          />{" "}
+          />
           Όλα τα παραπάνω πεδία είναι υποχρεωτικά.
         </p>
         <button
-          className={
-            formIsValid === true
-              ? inputsDisabled === true
-                ? "btn btn-dark"
-                : "custom-btn"
-              : "btn btn-dark"
-          }
-          disabled={
-            formIsValid === true
-              ? inputsDisabled === true
-                ? true
-                : false
-              : true
-          }
+          className={btnDisabled ? "btn btn-dark" : "custom-btn"}
+          disabled={btnDisabled}
           onClick={submitHandler}
         >
-          Αποστολή
+          {loading === true ? "Περιμένετε.." : "Αποστολή"}
         </button>
+        {httpError && (
+          <p className="error-text">
+            Κάτι δεν πήγε καλά. Προσπαθήστε ξανά αργότερα.
+          </p>
+        )}
+
+        {httpError === false && inputsDisabled === true ? (
+          <p className="success-text">
+            Λάβαμε το μήνυμά σας και θα επικοινωνήσουμε το συντομότερο.
+          </p>
+        ) : null}
       </div>
     </form>
   );

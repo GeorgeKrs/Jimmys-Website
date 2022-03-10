@@ -33,6 +33,10 @@
   color: var(--bs-danger-shadow-200);
 }
 
+.success-text {
+  color: var(--bs-success-shadow-200);
+}
+
 .custom-btn {
   color: var(--bs-dark);
   background-color: var(--color-green);
@@ -44,15 +48,3 @@
 .custom-btn:hover {
   background-color: var(--color-darker-green);
 }
-
-/* .custom-btn:active {
-  background-color: var(--color-darker-green);
-  box-shadow: 2px 2px 2px var(--color-darker-green);
-  margin: 2px 2px 2px 2px;
-}
-
-.custom-btn:focus {
-  background-color: var(--color-darker-green);
-  box-shadow: 2px 2px 2px var(--color-darker-green);
-  margin: 2px 2px 2px 2px;
-} */
