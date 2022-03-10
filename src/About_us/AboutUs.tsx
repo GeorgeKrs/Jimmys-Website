@@ -2,9 +2,13 @@ import "./AboutUs.css";
 import jimmysImg from "../assets/JimmysPosingCut.jpg";
 import SectionTitle from "../General/SectionTitle";
 
-const AboutUs = () => {
+interface Props {
+  viewRef: any;
+}
+
+const AboutUs = (props: Props) => {
   return (
-    <div className="infromationDiv p-5">
+    <div ref={props.viewRef} className="infromationDiv p-5">
       <div className="container mt-5">
         <div className="row mb-5">
           <div className="col-sm-12 col-md-12 col-lg-6 mb-5">

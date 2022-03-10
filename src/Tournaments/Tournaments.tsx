@@ -3,9 +3,13 @@ import "./Tournaments.css";
 import SectionTitle from "../General/SectionTitle";
 import TimelineCard from "../General/TimelineCard";
 
-const Tournaments = () => {
+interface Props {
+  viewRef: any;
+}
+
+const Tournaments = (props: Props) => {
   return (
-    <div className="tournaments-div p-5">
+    <div ref={props.viewRef} className="tournaments-div p-5">
       <div className="container mt-5 mb-5">
         <SectionTitle title="Διακρίσεις" />
         <div className="timeline d-flex justify-content-center">

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import "./NavigationBar.css";
 
@@ -13,7 +13,11 @@ import {
 // bootstrap
 import { Modal } from "react-bootstrap";
 
-const NavigationBar = () => {
+interface Props {
+  handleView: (ref: string) => void;
+}
+
+const NavigationBar = (props: Props) => {
   const [showMenu, setShowMenu] = useState(false);
   const handleClose = () => setShowMenu(false);
   const handleShow = () => setShowMenu(true);
@@ -47,20 +51,62 @@ const NavigationBar = () => {
         <Modal.Body className="modal-body">
           <div className="d-flex-column align-items-center">
             <div className="p-3">
-              <h4 className="modal-text">Σχετικά με εμάς</h4>
+              <h4
+                className="modal-text"
+                onClick={() => {
+                  props.handleView("aboutUs");
+                  handleClose();
+                }}
+              >
+                Σχετικά με εμάς
+              </h4>{" "}
             </div>
             <div className="p-3">
-              <h4 className="modal-text">Εξοπλισμός</h4>
+              <h4
+                className="modal-text"
+                onClick={() => {
+                  props.handleView("equipment");
+                  handleClose();
+                }}
+              >
+                Εξοπλισμός
+              </h4>
             </div>
             <div className="p-3">
-              <h4 className="modal-text">Συνδρομές</h4>
+              <h4
+                className="modal-text"
+                onClick={() => {
+                  props.handleView("prices");
+                  handleClose();
+                }}
+              >
+                Συνδρομές
+              </h4>
             </div>
             <div className="p-3">
-              <h4 className="modal-text">Διακρίσεις</h4>
+              <h4
+                className="modal-text"
+                onClick={() => {
+                  props.handleView("tournaments");
+                  handleClose();
+                }}
+              >
+                Διακρίσεις
+              </h4>
             </div>
+
             <div className="p-3">
-              <h4 className="modal-text">Επικοινωνία</h4>
+              <h4
+                className="modal-text"
+                onClick={() => {
+                  props.handleView("contact");
+                  handleClose();
+                }}
+              >
+                Επικοινωνία
+              </h4>
             </div>
+
             <hr />
             <div className="px-3 mt-3 d-flex flex-row-reverse">
               <FontAwesomeIcon

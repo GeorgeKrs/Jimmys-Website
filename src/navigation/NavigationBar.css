@@ -16,6 +16,8 @@
 
 .font-icon-back:hover {
   cursor: pointer;
+  color: var(--color-gold);
+  transition: all 300ms ease-in-out;
 }
 
 .header-link {
@@ -42,4 +44,12 @@
 
 .modal-text {
   font-weight: bolder;
+  transition: all 300ms ease-in-out;
+}
+
+.modal-text:hover {
+  font-weight: bolder;
+  color: var(--color-gold);
+  cursor: pointer;
+  text-decoration: underline;
 }

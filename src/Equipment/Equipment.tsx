@@ -6,9 +6,13 @@ import equipment1 from "../assets/equipment 1.jpg";
 import equipment2 from "../assets/equipment 2.jpg";
 import equipment3 from "../assets/equipment 3.jpg";
 
-const Equipment = () => {
+interface Props {
+  viewRef: any;
+}
+
+const Equipment = (props: Props) => {
   return (
-    <div className="equipment-div p-5">
+    <div ref={props.viewRef} className="equipment-div p-5">
       <div className="container mt-5 mb-5">
         <SectionTitle
           title={"Εξοπλισμός"}

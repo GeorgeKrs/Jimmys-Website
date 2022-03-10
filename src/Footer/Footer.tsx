@@ -4,9 +4,13 @@ import ContactForm from "./ContactForm";
 import MeetUs from "./MeetUs";
 import CreatorsInfo from "./CreatorsInfo";
 
-const Footer = () => {
+interface Props {
+  viewRef: any;
+}
+
+const Footer = (props: Props) => {
   return (
-    <div className="footer-div p-5">
+    <div ref={props.viewRef} className="footer-div p-5">
       <div className="container mt-5 mb-5">
         <div className="row">
           <ContactForm />
