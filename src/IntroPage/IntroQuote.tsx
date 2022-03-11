@@ -18,7 +18,7 @@ const IntroQuote = () => {
               icon={faCheck}
               className="font-icon-header"
             />
-            <span className="px-2">33 Χρόνια εμπειρίας</span>
+            <span className="px-2">40 Χρόνια εμπειρίας</span>
           </li>
           <li className="il-spacing">
             <FontAwesomeIcon
