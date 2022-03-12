@@ -16,7 +16,7 @@ const Tournaments = (props: Props) => {
           <div className="outer">
             <TimelineCard
               title={"1989"}
-              text={"3η Θέση στο Mr Hellas - Βαρία Κατηγορία - Wabba"}
+              text={"3η Θέση στο Mr Hellas - Βαριά Κατηγορία - Wabba"}
             />
             <TimelineCard
               title={"1990"}

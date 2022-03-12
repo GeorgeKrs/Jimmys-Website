@@ -1,5 +1,8 @@
+import { Carousel } from "react-bootstrap";
+
 import "./AboutUs.css";
-import jimmysImg from "../assets/JimmysPosingCut.jpg";
+import jimmysposing_beach from "../assets/jimmysposing_beach.jpg";
+import jimCompetition from "../assets/jimCompetition.jpg";
 import SectionTitle from "../General/SectionTitle";
 
 interface Props {
@@ -20,11 +23,22 @@ const AboutUs = (props: Props) => {
             />
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6">
-            <img
-              className="img-thumbnail"
-              src={jimmysImg}
-              alt="Jimmy's Posing"
-            />
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="img-thumbnail"
+                  src={jimmysposing_beach}
+                  alt="Jimmy's Posing"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="img-thumbnail"
+                  src={jimCompetition}
+                  alt="Jimmy's Posing"
+                />
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </div>

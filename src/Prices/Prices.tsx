@@ -15,31 +15,31 @@ const Prices = (props: Props) => {
         <div className="d-flex flex-wrap justify-content-center mt-5 mb-5">
           <Card
             plan={"Μηνιαία Συνδρομή"}
-            registration={"10€"}
-            price={"20€"}
+            registration={"Δωρεάν"}
+            price={"30€"}
             installments={"-"}
             finalPrice={"30€"}
           />
           <Card
             plan={"Τρίμηνη Συνδρομή"}
-            registration={"5€"}
+            registration={"Δωρεάν"}
             price={"60€"}
             installments={"-"}
-            finalPrice={"65€"}
+            finalPrice={"60€"}
           />
           <Card
             plan={"Εξάμηνη Συνδρομή"}
             registration={"Δωρεάν"}
             price={"100€"}
-            installments={"Μέχρι 2"}
+            installments={"-"}
             finalPrice={"100€"}
           />
           <Card
             plan={"Ετήσια Συνδρομή"}
             registration={"Δωρεάν"}
-            price={"170€"}
-            installments={"Μέχρι 2"}
-            finalPrice={"170€"}
+            price={"150€"}
+            installments={"-"}
+            finalPrice={"150€"}
           />
         </div>
       </div>
