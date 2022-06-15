@@ -11,4 +11,4 @@ Tech Used:
 
 The link to the website: https://jimmys-club.web.app
 
-Feel Free to visit my personal portfolio website for more information: https://georgekoursoumis.web.app
+Feel free to visit my personal website to see more: https://georgekoursoumis.web.app
