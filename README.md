@@ -1,11 +1,11 @@
 A Frontend website I developed for the needs of a local gym.
 
 Tech Used: 
-  TypeScript
-  React.JS
-  Bootstrap5
-  HTML5
-  CSS3
+  TypeScript,
+  React.JS,
+  Bootstrap5,
+  HTML5,
+  CSS3,
   Firebase/Firestore
 
 
